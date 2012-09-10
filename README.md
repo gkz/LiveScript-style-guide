@@ -212,7 +212,7 @@ If you can fit the body of each case on a single line, except for the `otherwise
 
 ### Default
 
-Use `default` wih the long form.
+Use `default` with the long form.
 
 Use `| otherwise =>` with the short form, unless your test cases are very short, in which case you can use `| _ =>`
 
