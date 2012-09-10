@@ -109,10 +109,22 @@ Use starting and ending whitespace before the first word and after the last, eg.
 not 
 
     <[list of words]>
+    
+#### Spacing 
+
+Use a single space after the comma, do not use a space before the comma. Eg.
+
+    [x, y, z]
 
 ### This
 
 Use `@` for `this` except when it is stand alone. 
+
+### Prototype
+
+Use `::` instead of `prototype` or `.prototype.`
+
+    Array::slice
 
 ## Operators
 
