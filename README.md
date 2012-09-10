@@ -136,4 +136,46 @@ When you can, avoid commas. This means you can leave them out when the preceding
     [1 2 3]
     add-numbers 5 x
 
+## Parentheses
 
+Avoid the use of parenthese whenever possbile. 
+
+Do not use them when calling functions:
+
+    Math.pow 2 3
+    
+You can use `do` instead of parentheses if you are calling against a block for instance:
+
+    some-func do
+      prop:  3
+      other: 5
+
+Avoid them with chaining, access and logic closes implicit calls:
+
+    $ '#content .slider' .find \a .slide-up!
+    
+You can avoid using them in lists by using a semicolon as a seperator when a comma won't work.
+
+    [add 2 3; times 2 3]
+
+## Calling Functions
+
+As mentioned earlier, if you can avoid using commas in the argument list, do so. 
+
+If you are calling with no arguments, use a bang call:
+
+    func!
+
+## Access
+
+### List Access
+
+Use `list.0` instead of `list[0]`, only use the brackets if you need to do some math, eg. `list[i-1]`
+
+### Dot Insertion
+Take advantage of implicit dot insertion, except when after parentheses or brackets. 
+
+    func!prop?blah
+    (g 2, x).prop
+    list[i+0].8
+    
