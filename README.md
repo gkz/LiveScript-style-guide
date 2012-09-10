@@ -20,6 +20,13 @@ Don't leave any trailing whitespace.
 
 You could technically end your lines with semicolons. Don't. Just use a newline. Only use semicolons to separate multiple statements on a single line.
 
+### Statements per Line
+
+Only have one statement per line, except if you have a series of very simple variable initializations, in which case seperate using a semicolon. 
+
+    x = 0; y = 1
+    x + y
+    
 ### Alignment
 
 When possible, align your code, if that alignment makes the code more readable. For example:
