@@ -186,3 +186,38 @@ Take advantage of automatic dot insertion, except when after parentheses or brac
     (g 2, x).prop
     list[i+0].8
     
+## Switch
+
+As mentioned earlier, align your switch statements. 
+
+### Short vs Long Form
+
+If you can fit the body of each case on a single line, except for the `otherwise` case, use the short form. Otherwise, use the long form.
+
+    switch
+    | even x    => x
+    | even y    => y
+    | otherwise =>
+      x + y
+      
+    switch
+    case f x
+      blah
+      ...
+    case g x
+      asdf
+      ...
+    default
+      ...
+
+### Default
+
+Use `default` wih the long form.
+
+Use `| otherwise =>` with the short form, unless your test cases are very short, in which case you can use `| _ =>`
+
+    switch x
+    | 2 => 7
+    | 3 => 8
+    | 4 => 9
+    | _ => 10
