@@ -172,8 +172,8 @@ If you are calling with no arguments, use a bang call:
 
 Use `list.0` instead of `list[0]`, only use the brackets if you need to do some math, eg. `list[i-1]`
 
-### Dot Insertion
-Take advantage of implicit dot insertion, except when after parentheses or brackets. 
+### Automatic Dot Insertion
+Take advantage of automatic dot insertion, except when after parentheses or brackets. 
 
     func!prop?blah
     (g 2, x).prop
