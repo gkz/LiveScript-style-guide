@@ -6,7 +6,7 @@ This is a style guide for the [LiveScript](http://gkz.github.com/LiveScript/) pr
 
 ### Indentation
 
-Use **2 spaces** per indentation level, not tabs, not another amount of spaces.
+Use **4 spaces** per indentation level, not tabs, not another amount of spaces.
 
 ### Blank Lines
 
@@ -46,9 +46,9 @@ Don't align, too large of a difference in length:
 #### Objects
 
     obj = 
-      prop: 8
-      key:  'something'
-      leng: 42
+        prop: 8
+        key:  'something'
+        leng: 42
 
 #### Switch
 
@@ -214,13 +214,13 @@ If you can fit the body of each case on a single line, except for the `otherwise
       
     switch
     case f x
-      blah
-      ...
+        blah
+        ...
     case g x
-      asdf
-      ...
+        asdf
+        ...
     default
-      ...
+        ...
 
 ### Default
 
