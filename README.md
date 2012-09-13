@@ -98,6 +98,8 @@ is not as you may want to change the message to something longer in the future.
 
 Otherwise, use single quotes `'hello world'`, except if you need to use string interpolation or have a string with many single quotes in it, in which case use double quotes `"hello #var"`.
 
+Use quotes for file paths/urls, even if you could technically use a backslash, becuase using the backslash is ugly in this case.
+
 ### Lists
 
 #### List of Words
