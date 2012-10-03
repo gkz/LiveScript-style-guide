@@ -6,7 +6,7 @@ This is a style guide for the [LiveScript](http://gkz.github.com/LiveScript/) pr
 
 ### Indentation
 
-Use **4 spaces** per indentation level, not tabs, not another amount of spaces.
+Use **2 spaces** per indentation level, not tabs, not another amount of spaces.
 
 ### Blank Lines
 
