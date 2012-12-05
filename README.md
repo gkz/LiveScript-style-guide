@@ -165,6 +165,11 @@ As mentioned earlier, if you can avoid using commas in the argument list, do so.
 If you are calling with no arguments, use a bang call:
 
     func!
+    
+Unless you are negating or boolean casting the result, then use `()` as otherwise it looks funny.
+
+    !func()
+    !!func()
 
 ## Access
 
