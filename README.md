@@ -29,28 +29,7 @@ Only have one statement per line, except if you have a series of very simple var
     
 ### Alignment
 
-When possible, align your code, if that alignment makes the code more readable. For example:
-
-#### Assignment
-
-Align:
-
-    height = 143
-    width  = 28
-
-Don't align, too large of a difference in length:
-
-    i = 0
-    second-param-obj = {}
-
-#### Objects
-
-    obj = 
-        prop: 8
-        key:  'something'
-        leng: 42
-
-#### Switch
+Allign short form `switch` statements:
 
     switch
     | n <= 0     => []
