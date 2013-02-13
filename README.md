@@ -14,7 +14,7 @@ Separate top level class and function definitions with a blank line. Add blank l
 
 ### Trailing Whitespace
 
-Don't leave any trailing whitespace. 
+Don't leave any trailing whitespace.
 
 ### Line End
 
@@ -22,11 +22,11 @@ You could technically end your lines with semicolons. Don't. Just use a newline.
 
 ### Statements per Line
 
-Only have one statement per line, except if you have a series of very simple variable initializations, in which case seperate using a semicolon. 
+Only have one statement per line, except if you have a series of very simple variable initializations, in which case seperate using a semicolon.
 
     x = 0; y = 1
     x + y
-    
+
 ### Alignment
 
 Allign short form `switch` statements:
@@ -59,7 +59,7 @@ Use `void` instead of `undefined`.
 
 ### Numbers
 
-When you can, insert a number comment to specify the units, if it helps readability. 
+When you can, insert a number comment to specify the units, if it helps readability.
 
     period = 7days * 52weeks
 
@@ -87,11 +87,11 @@ Use starting and ending whitespace before the first word and after the last, eg.
 
     <[ list of words ]>
 
-not 
+not
 
     <[list of words]>
-    
-#### Spacing 
+
+#### Spacing
 
 Use a single space after the comma, do not use a space before the comma. Eg.
 
@@ -99,7 +99,7 @@ Use a single space after the comma, do not use a space before the comma. Eg.
 
 ### This
 
-Use `@` for `this` except when it is stand alone. 
+Use `@` for `this` except when it is stand alone.
 
 ### Prototype
 
@@ -138,12 +138,12 @@ When you can, avoid commas. This means you can leave them out when the preceding
 
 ## Parentheses
 
-Avoid the use of parenthese whenever possbile. 
+Avoid the use of parenthese whenever possbile.
 
 Do not use them when calling functions:
 
     Math.pow 2 3
-    
+
 You can use `do` instead of parentheses if you are calling against a block for instance:
 
     some-func do
@@ -153,19 +153,19 @@ You can use `do` instead of parentheses if you are calling against a block for i
 Avoid them with chaining, access and logic closes implicit calls:
 
     $ '#content .slider' .find \a .slide-up!
-    
+
 You can avoid using them in lists by using a semicolon as a seperator when a comma won't work.
 
     [add 2 3; times 2 3]
 
 ## Calling Functions
 
-As mentioned earlier, if you can avoid using commas in the argument list, do so. 
+As mentioned earlier, if you can avoid using commas in the argument list, do so.
 
 If you are calling with no arguments, use a bang call:
 
     func!
-    
+
 Unless you are negating or boolean casting the result, then use `()` as otherwise it looks funny.
 
     !func()
@@ -178,15 +178,15 @@ Unless you are negating or boolean casting the result, then use `()` as otherwis
 Use `list.0` instead of `list[0]`, only use the brackets if you need to do some math, eg. `list[i-1]`
 
 ### Automatic Dot Insertion
-Take advantage of automatic dot insertion, except when after parentheses or brackets. 
+Take advantage of automatic dot insertion, except when after parentheses or brackets.
 
     func!prop?blah
     (g 2, x).prop
     list[i+0].8
-    
+
 ## Switch
 
-As mentioned earlier, align your switch statements. 
+As mentioned earlier, align your switch statements.
 
 ### Short vs Long Form
 
@@ -197,7 +197,7 @@ If you can fit the body of each case on a single line, except for the `otherwise
     | even y    => y
     | otherwise =>
       x + y
-      
+
     switch
     case f x
         blah
