@@ -22,7 +22,7 @@ You could technically end your lines with semicolons. Don't. Just use a newline.
 
 ### Statements per Line
 
-Only have one statement per line, except if you have a series of very simple variable initializations, in which case seperate using a semicolon.
+Only have one statement per line, except if you have a series of very simple variable initializations, in which case separate using a semicolon.
 
     x = 0; y = 1
     x + y
@@ -42,7 +42,7 @@ Use dashes instead of camel case or underscores to name everything and access ex
 
     to-upper-case = -> it.to-upper-case!
 
-Except for class names, use pascal case for those:
+Except for class names, use Pascal case for those:
 
     class WidgetThing extends Base
       ...
@@ -138,7 +138,7 @@ When you can, avoid commas. This means you can leave them out when the preceding
 
 ## Parentheses
 
-Avoid the use of parenthese whenever possbile.
+Avoid the use of parentheses whenever possible.
 
 Do not use them when calling functions:
 
@@ -154,7 +154,7 @@ Avoid them with chaining, access and logic closes implicit calls:
 
     $ '#content .slider' .find \a .slide-up!
 
-You can avoid using them in lists by using a semicolon as a seperator when a comma won't work.
+You can avoid using them in lists by using a semicolon as a separator when a comma won't work.
 
     [add 2 3; times 2 3]
 
