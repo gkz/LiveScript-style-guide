@@ -53,10 +53,6 @@ Except for class names, use Pascal case for those:
 
 `true` and `false` are preferred over their aliases (`yes`, `no`, `on`, `off`), unless the code is much more readable using the alias.
 
-### Void
-
-Use `void` instead of `undefined`.
-
 ### Numbers
 
 When you can, insert a number comment to specify the units, if it helps readability.
