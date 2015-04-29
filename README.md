@@ -1,12 +1,12 @@
 # LiveScript Style Guide
 
-This is a style guide for the [LiveScript](http://gkz.github.com/LiveScript/) programming language.
+This is a style guide for the [LiveScript](http://livescript.net) programming language.
 
 ## Code Layout
 
 ### Indentation
 
-Use **2 spaces** per indentation level, not tabs, not another amount of spaces.
+Use **4 spaces** per indentation level, not tabs, not another amount of spaces.
 
 ### Blank Lines
 
@@ -18,13 +18,13 @@ Don't leave any trailing whitespace.
 
 ### Line End
 
-You could technically end your lines with semicolons. Don't. Just use a newline. Only use semicolons to separate multiple statements on a single line.
+Don't end your lines with semicolons. Just use a newline. Only use semicolons to separate multiple statements on a single line.
 
 ### Statements per Line
 
-Only have one statement per line, except if you have a series of very simple variable initializations, in which case separate using a semicolon.
+Only have one statement per line.
 
-    x = 0; y = 1
+    x = 0
     x + y
 
 ### Alignment
@@ -34,7 +34,7 @@ Align short form `switch` statements:
     switch
     | n <= 0     => []
     | empty list => []
-    | otherwise  => [x] +++ take n - 1, xs
+    | otherwise  => [x] ++ take n - 1, xs
 
 ## Naming
 
@@ -42,7 +42,7 @@ Use dashes instead of camel case or underscores to name everything and access ex
 
     to-upper-case = -> it.to-upper-case!
 
-Except for class names, use Pascal case for those:
+Except for class names, use PascalCase for those:
 
     class WidgetThing extends Base
       ...
@@ -61,19 +61,7 @@ When you can, insert a number comment to specify the units, if it helps readabil
 
 ### Strings
 
-Use a preceding backslash `\word` for strings which are a single word and are not expected to change to multiple words in the future. Eg,
-
-    element.on \click -> ...
-
-is fine, but
-
-    alert \hi
-
-is not as you may want to change the message to something longer in the future.
-
-Otherwise, use single quotes `'hello world'`, except if you need to use string interpolation or have a string with many single quotes in it, in which case use double quotes `"hello #var"`.
-
-Use quotes for file paths/urls, even if you could technically use a backslash, because using the backslash is ugly in this case.
+Use single quotes `'hello world'`, except if you need to use string interpolation or have a string with many single quotes in it, in which case use double quotes `"hello #var"`.
 
 ### Lists
 
@@ -99,7 +87,7 @@ Use `@` for `this` except when it is stand alone.
 
 ### Prototype
 
-Use `::` instead of `prototype` or `.prototype.`
+Use `::` instead of `.prototype.`
 
     Array::slice
 
@@ -148,7 +136,7 @@ You can use `do` instead of parentheses if you are calling against a block for i
 
 Avoid them with chaining, access and logic closes implicit calls:
 
-    $ '#content .slider' .find \a .slide-up!
+    $ '#content .slider' .find 'a' .slide-up!
 
 You can avoid using them in lists by using a semicolon as a separator when a comma won't work.
 
@@ -167,17 +155,9 @@ Unless you are negating or boolean casting the result, then use `()` as otherwis
     !func()
     !!func()
 
-## Access
+## List Access
 
-### List Access
-
-Use `list.0` instead of `list[0]`, only use the brackets if you need to do some math, eg. `list[i-1]`
-
-### Automatic Dot Insertion
-Take advantage of automatic dot insertion, except when after parentheses or brackets.
-
-    func!prop?blah
-    (g 2, x).prop
+Use `list.0` instead of `list[0]`, only use the brackets if you need to do some math, eg. `list[i-1].prop
     list[i+0].8
 
 ## Switch
