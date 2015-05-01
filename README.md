@@ -115,10 +115,11 @@ Use `isnt` over `is not`.
 
 ## Commas
 
-When you can, avoid commas. This means you can leave them out when the preceding item is a non-callable in a list (this includes arguments).
+When you can, avoid commas. This means you can leave them out when the preceding item is a non-callable in a list (this includes arguments). However, keep it consistent within a call or a list. Either use commas between all items, or don't use them at all.
 
     [1 2 3]
     add-numbers 5 x
+    [1, x, 3]
 
 ## Parentheses
 
