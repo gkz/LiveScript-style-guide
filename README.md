@@ -132,8 +132,8 @@ Do not use them when calling functions:
 You can use `do` instead of parentheses if you are calling against a block for instance:
 
     some-func do
-      prop:  3
-      other: 5
+        prop:  3
+        other: 5
 
 Avoid them with chaining, access and logic closes implicit calls:
 
@@ -173,7 +173,7 @@ If you can fit the body of each case on a single line, except for the `otherwise
     | even x    => x
     | even y    => y
     | otherwise =>
-      x + y
+        x + y
 
     switch
     case f x
