@@ -158,8 +158,7 @@ Unless you are negating or boolean casting the result, then use `()` as otherwis
 
 ## List Access
 
-Use `list.0` instead of `list[0]`, only use the brackets if you need to do some math, eg. `list[i-1].prop
-    list[i+0].8
+Use `list.0` instead of `list[0]`. Only use the brackets if you need to do some math, e.g. `list[i+0].8`
 
 ## Switch
 
